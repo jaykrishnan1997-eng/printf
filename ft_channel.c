@@ -6,7 +6,7 @@
 /*   By: jkrishna <jkrishna@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/05/06 20:02:37 by jay-k             #+#    #+#             */
-/*   Updated: 2026/05/25 11:37:18 by jkrishna         ###   ########.fr       */
+/*   Updated: 2026/05/30 14:09:24 by jkrishna         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -36,6 +36,6 @@ int	ft_channel(char a, va_list *args)
 	else if (a == '%')
 		count += ft_percprintf();
 	else
-		return (-1);
+		return (0);
 	return (count);
 }

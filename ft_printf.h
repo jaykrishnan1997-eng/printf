@@ -6,7 +6,7 @@
 /*   By: jkrishna <jkrishna@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/05/01 14:41:53 by jkrishna          #+#    #+#             */
-/*   Updated: 2026/05/07 15:51:42 by jkrishna         ###   ########.fr       */
+/*   Updated: 2026/05/30 14:09:21 by jkrishna         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,7 +15,6 @@
 
 # include <stdarg.h>
 # include <unistd.h>
-# include <stdio.h>
 # include <stddef.h>
 
 int	ft_printf(const char *s, ...);

@@ -6,7 +6,7 @@
 /*   By: jkrishna <jkrishna@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/05/06 19:20:12 by jay-k             #+#    #+#             */
-/*   Updated: 2026/05/07 12:20:18 by jkrishna         ###   ########.fr       */
+/*   Updated: 2026/05/30 14:09:27 by jkrishna         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,6 +29,8 @@ int	ft_cxprintf(unsigned int num)
 {
 	int	count;
 
+	if (num == 0)
+		return (write(1, "0", 1));
 	count = 0;
 	count += hexe(num);
 	return (count);
