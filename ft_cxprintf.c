@@ -6,7 +6,7 @@
 /*   By: jkrishna <jkrishna@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/05/06 19:20:12 by jay-k             #+#    #+#             */
-/*   Updated: 2026/05/30 14:25:54 by jkrishna         ###   ########.fr       */
+/*   Updated: 2026/05/30 14:33:40 by jkrishna         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,7 +21,7 @@ static int	hexe(unsigned int num)
 	hex = "0123456789ABCDEF";
 	if (num >= 16)
 		count += hexe(num / 16);
-	count += f_wrap(write (1, &hex[num % 16], 1));
+	count += ft_wrap(write (1, &hex[num % 16], 1));
 	return (count);
 }
 
@@ -30,7 +30,7 @@ int	ft_cxprintf(unsigned int num)
 	int	count;
 
 	if (num == 0)
-		return (f_wrap(write(1, "0", 1)));
+		return (ft_wrap(write(1, "0", 1)));
 	count = 0;
 	count += hexe(num);
 	return (count);

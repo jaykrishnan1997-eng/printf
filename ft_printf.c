@@ -6,7 +6,7 @@
 /*   By: jkrishna <jkrishna@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/05/06 19:37:48 by jay-k             #+#    #+#             */
-/*   Updated: 2026/05/30 14:27:55 by jkrishna         ###   ########.fr       */
+/*   Updated: 2026/05/30 14:31:53 by jkrishna         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,7 +31,7 @@ int	ft_printf(const char *s, ...)
 			i++;
 		}
 		else
-			count += f_wrap(write (1, &s[i], 1));
+			count += ft_wrap(write (1, &s[i], 1));
 		i++;
 	}
 	va_end (args);

@@ -6,7 +6,7 @@
 /*   By: jkrishna <jkrishna@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/05/04 13:00:08 by jkrishna          #+#    #+#             */
-/*   Updated: 2026/05/30 14:27:33 by jkrishna         ###   ########.fr       */
+/*   Updated: 2026/05/30 14:33:40 by jkrishna         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,7 +21,7 @@ static int	hexe(unsigned long num)
 	hex = "0123456789abcdef";
 	if (num >= 16)
 		count += hexe(num / 16);
-	count += f_wrap(write (1, &hex[num % 16], 1));
+	count += ft_wrap(write (1, &hex[num % 16], 1));
 	return (count);
 }
 
@@ -32,10 +32,10 @@ int	ft_pprintf(void *ptr)
 	count = 0;
 	if (!ptr)
 	{
-		count += f_wrap(write(1, "(nil)", 5));
+		count += ft_wrap(write(1, "(nil)", 5));
 		return (count);
 	}
-	count = f_wrap(write (1, "0x", 2));
+	count = ft_wrap(write (1, "0x", 2));
 	count += hexe((unsigned long)ptr);
 	return (count);
 }
