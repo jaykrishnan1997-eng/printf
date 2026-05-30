@@ -6,7 +6,7 @@
 #    By: jkrishna <jkrishna@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2026/05/07 12:41:02 by jkrishna          #+#    #+#              #
-#    Updated: 2026/05/07 12:51:11 by jkrishna         ###   ########.fr        #
+#    Updated: 2026/05/30 14:37:50 by jkrishna         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -24,7 +24,8 @@ SRC = 	ft_printf.c \
 		ft_diprintf.c \
 		ft_xprintf.c \
 		ft_cxprintf.c \
-		ft_percprintf.c
+		ft_percprintf.c \
+		ft_wrap.c
 
 OBJ = $(SRC:.c=.o)
 
