@@ -6,7 +6,7 @@
 /*   By: jkrishna <jkrishna@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/05/30 14:19:24 by jkrishna          #+#    #+#             */
-/*   Updated: 2026/05/30 14:34:33 by jkrishna         ###   ########.fr       */
+/*   Updated: 2026/06/03 14:16:59 by jkrishna         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,6 +15,6 @@
 int	ft_wrap(int write)
 {
 	if (write < 0)
-		return (-1);
+		return (0);
 	return (write);
 }
