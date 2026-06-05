@@ -16,6 +16,6 @@ int	ft_cprintf(int c)
 {
 	int	count;
 
-	count = ft_write(write (1, &c, 1));
+	count = write (1, &c, 1);
 	return (count);
 }

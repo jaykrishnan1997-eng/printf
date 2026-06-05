@@ -21,7 +21,7 @@ static int	hexe(unsigned int num)
 	hex = "0123456789abcdef";
 	if (num >= 16)
 		count += hexe(num / 16);
-	count += ft_write(write (1, &hex[num % 16], 1));
+	count += write(1, &hex[num % 16], 1);
 	return (count);
 }
 
@@ -30,7 +30,7 @@ int	ft_xprintf(unsigned int num)
 	int	count;
 
 	if (num == 0)
-		return (ft_write(write(1, "0", 1)));
+		return (write(1, "0", 1));
 	count = 0;
 	count += hexe(num);
 	return (count);

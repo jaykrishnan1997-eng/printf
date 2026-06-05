@@ -21,7 +21,7 @@ static int	hexe(unsigned long num)
 	hex = "0123456789abcdef";
 	if (num >= 16)
 		count += hexe(num / 16);
-	count += ft_write(write (1, &hex[num % 16], 1));
+	count += write (1, &hex[num % 16], 1);
 	return (count);
 }
 
@@ -32,10 +32,10 @@ int	ft_pprintf(void *ptr)
 	count = 0;
 	if (!ptr)
 	{
-		count += ft_write(write(1, "(nil)", 5));
+		count += write(1, "(nil)", 5);
 		return (count);
 	}
-	count = ft_write(write (1, "0x", 2));
+	count = write (1, "0x", 2);
 	count += hexe((unsigned long)ptr);
 	return (count);
 }

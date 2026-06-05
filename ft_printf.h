@@ -27,6 +27,5 @@ int	ft_uprintf(unsigned int num);
 int	ft_xprintf(unsigned int num);
 int	ft_cxprintf(unsigned int num);
 int	ft_percprintf(void);
-int	ft_write(int write);
 
 #endif

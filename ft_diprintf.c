@@ -20,7 +20,7 @@ static int	ft_numrec(long num)
 	if (num > 0)
 	{
 		count += ft_numrec(num / 10);
-		count += ft_write(write (1, &(char){num % 10 + '0'}, 1));
+		count += write (1, &(char){num % 10 + '0'}, 1);
 	}
 	return (count);
 }
@@ -34,13 +34,13 @@ int	ft_diprintf(int num)
 	lnum = (long)num;
 	if (lnum == 0)
 	{
-		count += ft_write(write (1, "0", 1));
+		count += write (1, "0", 1);
 		return (count);
 	}
 	else if (lnum < 0)
 	{
 		lnum = -lnum;
-		count += ft_write(write (1, "-", 1));
+		count += write (1, "-", 1);
 	}
 	count += ft_numrec(lnum);
 	return (count);

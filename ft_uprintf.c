@@ -20,7 +20,7 @@ static int	ft_numrec(unsigned int num)
 	if (num > 0)
 		count += ft_numrec(num / 10);
 	if (num > 0)
-		count += ft_write(write (1, &(char){num % 10 + '0'}, 1));
+		count += write (1, &(char){num % 10 + '0'}, 1);
 	return (count);
 }
 
@@ -31,7 +31,7 @@ int	ft_uprintf(unsigned int num)
 	count = 0;
 	if (num == 0)
 	{
-		count += ft_write(write (1, "0", 1));
+		count += write (1, "0", 1);
 		return (count);
 	}
 	count += ft_numrec(num);

@@ -14,5 +14,5 @@
 
 int	ft_percprintf(void)
 {
-	return (ft_write(write (1, "%", 1)));
+	return (write (1, "%", 1));
 }

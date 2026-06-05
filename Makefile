@@ -24,8 +24,7 @@ SRC = 	ft_printf.c \
 		ft_diprintf.c \
 		ft_xprintf.c \
 		ft_cxprintf.c \
-		ft_percprintf.c \
-		ft_write.c
+		ft_percprintf.c
 
 OBJ = $(SRC:.c=.o)
 
@@ -41,7 +40,7 @@ $(NAME): $(OBJ)
 	$(CC) $(CFLAGS) -c $< -o $@
 
 clean:
-	rm -f *.o	
+	rm -f *.o
 
 fclean: clean
 	rm -f $(NAME)

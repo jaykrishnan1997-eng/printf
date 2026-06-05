@@ -21,12 +21,12 @@ int	ft_sprintf(char *str)
 	count = 0;
 	if (!str)
 	{
-		count += ft_write(write(1, "(null)", 6));
+		count += write(1, "(null)", 6);
 		return (count);
 	}
 	while (str[j])
 	{
-		count += ft_write(write (1, &str[j], 1));
+		count += write (1, &str[j], 1);
 		j++;
 	}
 	return (count);
