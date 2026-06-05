@@ -1,23 +1,20 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_cprintf.c                                       :+:      :+:    :+:   */
+/*   ft_write.c                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: jkrishna <jkrishna@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2026/05/01 14:47:04 by jkrishna          #+#    #+#             */
-/*   Updated: 2026/06/05 10:55:22 by jkrishna         ###   ########.fr       */
+/*   Created: 2026/05/30 14:19:24 by jkrishna          #+#    #+#             */
+/*   Updated: 2026/06/05 11:02:15 by jkrishna         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "ft_printf.h"
 
-int	ft_cprintf(int c)
+int	ft_write(int write)
 {
-	int	count;
-
-	count = ft_write(write (1, &c, 1));
-	if (count < 0)
+	if (write < 0)
 		return (0);
-	return (count);
+	return (write);
 }

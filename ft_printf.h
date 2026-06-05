@@ -6,7 +6,7 @@
 /*   By: jkrishna <jkrishna@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/05/01 14:41:53 by jkrishna          #+#    #+#             */
-/*   Updated: 2026/05/30 14:34:38 by jkrishna         ###   ########.fr       */
+/*   Updated: 2026/06/05 10:55:22 by jkrishna         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,6 +27,6 @@ int	ft_uprintf(unsigned int num);
 int	ft_xprintf(unsigned int num);
 int	ft_cxprintf(unsigned int num);
 int	ft_percprintf(void);
-int	ft_wrap(int write);
+int	ft_write(int write);
 
 #endif

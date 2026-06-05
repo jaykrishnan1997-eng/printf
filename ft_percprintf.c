@@ -6,7 +6,7 @@
 /*   By: jkrishna <jkrishna@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/05/06 19:21:13 by jay-k             #+#    #+#             */
-/*   Updated: 2026/05/30 14:33:40 by jkrishna         ###   ########.fr       */
+/*   Updated: 2026/06/05 10:55:22 by jkrishna         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,5 +14,5 @@
 
 int	ft_percprintf(void)
 {
-	return (ft_wrap(write (1, "%", 1)));
+	return (ft_write(write (1, "%", 1)));
 }
