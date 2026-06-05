@@ -6,7 +6,7 @@
 /*   By: jkrishna <jkrishna@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/05/01 14:47:04 by jkrishna          #+#    #+#             */
-/*   Updated: 2026/06/05 10:55:22 by jkrishna         ###   ########.fr       */
+/*   Updated: 2026/06/05 13:51:07 by jkrishna         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,7 +17,5 @@ int	ft_cprintf(int c)
 	int	count;
 
 	count = ft_write(write (1, &c, 1));
-	if (count < 0)
-		return (0);
 	return (count);
 }

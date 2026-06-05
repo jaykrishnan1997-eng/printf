@@ -6,7 +6,7 @@
 #    By: jkrishna <jkrishna@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2026/05/07 12:41:02 by jkrishna          #+#    #+#              #
-#    Updated: 2026/06/05 10:55:22 by jkrishna         ###   ########.fr        #
+#    Updated: 2026/06/05 13:50:54 by jkrishna         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -37,8 +37,6 @@ all: $(NAME)
 $(NAME): $(OBJ)
 	$(AR) $(ARFLAGS) $@ $(OBJ)
 
-#bonus: all
-
 %.o: %.c
 	$(CC) $(CFLAGS) -c $< -o $@
 
@@ -50,5 +48,5 @@ fclean: clean
 
 re: fclean all
 
-.PHONY: all bonus clean fclean re
+.PHONY: all clean fclean re
 
